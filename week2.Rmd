@@ -1,0 +1,20 @@
+---
+title: "Developing Data Products week2 assignment"
+author: "systemocracy"
+date: "January 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R markdown + Leaflet
+
+```{r echo = FALSE}
+library(leaflet)
+leaflet() %>% 
+  addTiles() %>%
+  addMarkers(lat=46.233832398, lng= 6.053166454, popup = "CERN") %>%
+  addTerminator() # Playing with leaflet 
+```
